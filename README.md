@@ -27,7 +27,7 @@ ENJOY!!!!
 Clone from GIT:
 * Create or move to an empty dir: `cd <WorkshopProyectsDirToUse>`
 * Run: `https://github.com/igl100/datavirt62-demo.git`
-https://github.com/igl100/datavirt62-demo/blob/master/docs/image/C1.png
+![Img](https://github.com/igl100/datavirt62-demo/blob/master/docs/image/C1.png)
 
 # Set Perspective
 
