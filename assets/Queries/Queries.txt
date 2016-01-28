@@ -1,0 +1,14 @@
+// 1) Enter valid SQL query (i.e. SELECT * FROM FOO)
+// 2) Highlight query and right-click select "Execute Selected Text"
+
+//QUERY 1
+SELECT * FROM GlobalViewModel.Profile
+
+//QUERY 2
+SELECT * FROM GlobalViewModel.Profile AS profile WHERE profile.Nombre = 'Miguel'
+
+//QUERY 3
+SELECT profile.Nombre, profile.Origen, profile.Destino FROM GlobalViewModel.Profile AS profile 	WHERE profile.Nombre='Miguel' GROUP BY profile.Nombre, profile.Origen, profile.Destino
+
+//QUERY 4
+SELECT profile.Nombre, profile.Actividad FROM GlobalViewModel.Profile AS profile WHERE profile.Nombre='Miguel' GROUP BY profile.Nombre, profile.Actividad

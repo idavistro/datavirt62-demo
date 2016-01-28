@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Viajes>
+    <Persona>
+        <Nombre>Juan</Nombre>
+        <Origen>Mexico</Origen>
+        <Destino>EEUU</Destino>
+    </Persona>
+    <Persona>
+        <Nombre>Juan</Nombre>
+        <Origen>Grecia</Origen>
+        <Destino>Paris</Destino>
+    </Persona>
+    <Persona>
+        <Nombre>Miguel</Nombre>
+        <Origen>Turquia</Origen>
+        <Destino>Dubai</Destino>
+    </Persona>
+    <Persona>
+        <Nombre>Rodrigo</Nombre>
+        <Origen>China</Origen>
+        <Destino>Costa Rica</Destino>
+    </Persona>
+</Viajes>

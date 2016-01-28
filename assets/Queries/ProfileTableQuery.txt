@@ -1,0 +1,6 @@
+SELECT
+		ViajesViewModel.Viajes.Nombre, ViajesViewModel.Viajes.Origen, ViajesViewModel.Viajes.Destino, GlobalViewModel.Actividades.id_actividad, GlobalViewModel.Actividades.id_persona, GlobalViewModel.Actividades.actividad, GlobalViewModel.Personas.id_persona AS id_persona_1, GlobalViewModel.Personas.nombre AS nombre_1, GlobalViewModel.Personas.edad, GlobalViewModel.Personas.ap_paterno, GlobalViewModel.Personas.ap_materno
+	FROM
+		ViajesViewModel.Viajes, GlobalViewModel.Actividades, GlobalViewModel.Personas
+	WHERE
+		(GlobalViewModel.Personas.id_persona = GlobalViewModel.Actividades.id_persona) AND (GlobalViewModel.Personas.nombre = ViajesViewModel.Viajes.Nombre)

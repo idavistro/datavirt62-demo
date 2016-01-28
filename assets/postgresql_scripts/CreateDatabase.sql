@@ -1,0 +1,16 @@
+﻿DROP DATABASE IF EXISTS "DataVirtDemoDB";
+DROP ROLE IF EXISTS "dataVirtDemoUser";
+
+CREATE ROLE "dataVirtDemoUser" LOGIN
+  ENCRYPTED PASSWORD 'md559181396f9f2bdee8ef00e21bcac787c'
+  SUPERUSER INHERIT CREATEDB CREATEROLE REPLICATION;
+
+CREATE DATABASE "DataVirtDemoDB"
+  WITH OWNER = igalvan
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'en_US.UTF-8'
+       LC_CTYPE = 'en_US.UTF-8'
+       CONNECTION LIMIT = -1;
+       
+GRANT ALL ON DATABASE "DataVirtDemoDB" TO public;
